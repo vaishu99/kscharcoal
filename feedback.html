@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Feedback Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      border: 2px solid #ccc; /* Adding border to the form */
+      padding: 20px; /* Adding padding for better appearance */
+      border-radius: 8px; /* Adding border radius for rounded corners */
+    }
+    h2 {
+      text-align: center; /* Centering the h2 tag */
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="datetime-local"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+ 
+  <form action="reservation_handler.php" method="POST">
+    <h2>Feedback Form</h2>
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+    <label for="datetime">Date and Time</label>
+    <input type="datetime-local" id="datetime" name="datetime" required>
+   <br><br>
+
+    <label class="radio-inline">Food Quality</label><br>
+        <input type="radio" name="optradio">Good
+        <input type="radio" name="optradio">Excellent
+        <input type="radio" name="optradio">Average
+        <input type="radio" name="optradio">Dissatisfied
+        <br><br>
+        <label class="radio-inline">Overall Service Quality</label><br>
+        <input type="radio" name="optradio">Good
+        <input type="radio" name="optradio">Excellent
+        <input type="radio" name="optradio">Average
+        <input type="radio" name="optradio">Dissatisfied
+        <br><br>
+        <label class="radio-inline">Cleanliness</label><br>
+        <input type="radio" name="optradio">Good
+        <input type="radio" name="optradio">Excellent
+        <input type="radio" name="optradio">Average
+        <input type="radio" name="optradio">Dissatisfied
+        <br><br>
+        <label class="radio-inline">Order Accuracy</label><br>
+        <input type="radio" name="optradio">Good
+        <input type="radio" name="optradio">Excellent
+        <input type="radio" name="optradio">Average
+        <input type="radio" name="optradio">Dissatisfied
+        <br><br>
+        <label class="radio-inline">Speed of Service</label><br>
+        <input type="radio" name="optradio">Good
+        <input type="radio" name="optradio">Excellent
+        <input type="radio" name="optradio">Average
+        <input type="radio" name="optradio">Dissatisfied
+        <br><br>
+        <label class="radio-inline">Overall Experience</label><br>
+        <input type="radio" name="optradio">Good
+        <input type="radio" name="optradio">Excellent
+        <input type="radio" name="optradio">Average
+        <input type="radio" name="optradio">Dissatisfied
+        <br><br>
+
+    <input type="submit" value="Submit">
+    <a href="index.html"><button type="button" class="btn btn-secondary">Back to home</button></a>
+  </form>
+</body>
+</html>

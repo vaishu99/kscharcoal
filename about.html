@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Page</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.as{
+  padding-left: 37%;
+}
+.home{
+  padding-left: 60%;
+  font-size: large;
+  color: white; 
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1 class="as">About Us <a href="index.html" class="home">Home</a></h1>
+  
+  <p>K's Charcoal is offering the best Indian taste.</p>
+  <p>Our team is dedicated to provide the delicious food to the customer which is healthy and tasty for them.Food cooked with take in mind about cleanliness.s</p>
+</div>
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.3E1_FeqMuXqamlrL16mM2AHaHa&pid=Api&P=0&h=180.jpg" alt="Jane"class="center" style="width: 60%;">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">Owner</p>
+        <p>It was my dream to provide delicious food to people.</p>
+        <p>jane@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.moB2WWLGhQBjMqv2fUPZswAAAA&pid=Api&P=0&h=180.jpg" alt="Mike" class="center"style="width: 41%;">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Main Chef.</p>
+        <p>Cooking food is my passion.</p>
+        <p>mike@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.RtORxxFoLbmMAySxgbiKDgHaLI&pid=Api&P=0&h=180.jpg" alt="John"class="center" style="width: 40%;">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Assistant Chef.</p>
+        <p>Food makes the mood of people healthy and happy.</p>
+        <p>john@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
